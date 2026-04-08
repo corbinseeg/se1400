@@ -164,6 +164,17 @@ main img{
     grid-column-end: -1;
 }
 
+#alumnihero{
+    height: 300px;
+    background-size: cover;
+    background-image: url("images/alumnihero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-row: 3 / 4;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
 *{
     box-sizing: border-box;
     margin: 0px;
@@ -197,7 +208,7 @@ form input, form textarea, form button{
     border: none;
 }
 
-form input, form textarea:focus{
+form input:focus, form textarea:focus{
     outline: none;
     background-color: #f0f0f0;
 }
@@ -275,6 +286,17 @@ form label{
         grid-column-end: 8;
     }
 
+    #alumnihero{
+        height: auto;
+        background-size: cover;
+        background-image: url("images/alumnihero.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        grid-row: 2 / 3;
+        grid-column-start: 5;
+        grid-column-end: 8;
+    }
+
     main img{
         float: none;
         width: 100%;
@@ -316,6 +338,10 @@ form label{
     }
 
     #facultyhero{
+        display: none;
+    }
+
+    #alumnihero{
         display: none;
     }
 }
