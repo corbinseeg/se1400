@@ -25,10 +25,25 @@
     <div id="alumnihero">
     </div>
     <main>
-      <h2>Join Alumni Mailing List</h2>
-      <h3>Request Alumni Newslette</h3>
-
-
+      <br>
+      <h2>Join Alumni Mailing List</h2><br>
+      <h3>Request Alumni Newsletter</h3>
+      <p>Required information is marked with an asterisk (*).</p><br>
+      <form action="https://kearl.net/se1400/mail.php" method="post">
+        <label for="myFName">* First Name:</label>
+        <input name="myFName" type="text" required><br>
+        <label for="myLName">* Last Name:</label>
+        <input name="myLName" type="text" required><br>
+        <label for="myEmail">* E-mail:</label>
+        <input name="myEmail" type="email" required><br>
+        <label for="myPhone">Phone:</label>
+        <input name="myPhone" type="tel"><br>
+        <label for="myDate">Graduation Date:</label>
+        <input name="myDate" type="date">
+        <label for="myComments">* Comments:</label>
+        <textarea rows="2" cols="20" name="myComments" required></textarea><br>
+        <button type="submit" id="mySubmit">Submit</button>
+      </form>
     </main>
     <footer>
         Copyright &copy; 2025 Utah Tech University<br>

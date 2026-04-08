@@ -186,6 +186,38 @@ main img{
     grid-column: 1 / -1;
 }
 
+form{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 200px 1fr;
+    gap: 0.75rem;
+    width: 100%;
+}
+
+form input, form textarea, form button{
+    font-size: 1rem;
+    padding: 10px;
+    color: #666;
+    background-color: #fafafa;
+    border: none;
+}
+
+form input:focus, form textarea:focus{
+    outline: none;
+    background-color: #f0f0f0;
+}
+
+form label{
+    padding: 10px;
+    text-align: right;
+    grid-column: 1;
+}
+
+.mySubmit{
+    width: 10rem;
+    grid-column: 2 / 3;
+}
+
 table{
     text-align: center;
     border-color: #424242;
@@ -285,6 +317,17 @@ video {
         grid-column-end: 8;
     }
 
+    #alumnihero{
+        height: auto;
+        background-size: cover;
+        background-image: url("images/alumnihero.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        grid-row: 2 / 3;
+        grid-column-start: 5;
+        grid-column-end: 8;
+    }
+
     main img{
         float: none;
         width: 100%;
@@ -333,6 +376,10 @@ video {
     }
 
     #facultyhero{
+        display: none;
+    }
+
+    #alumnihero{
         display: none;
     }
 }
