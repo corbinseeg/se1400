@@ -78,6 +78,11 @@ nav a{
     padding: 1rem 0rem;
     display: block;
     text-align: center;
+    transition: background-color 0.5s ease-out;
+}
+
+nav a:hover{
+    background-color: #5e5e5e;
 }
 
 h2{
@@ -181,36 +186,41 @@ main img{
     grid-column: 1 / -1;
 }
 
-form{
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 200px 1fr;
-    gap: 0.75rem;
+table{
+    text-align: center;
+    border-color: #424242;
+    border-style: solid;
     width: 100%;
+    border-collapse: collapse;
 }
 
-form input, form textarea, form button{
-    font-size: 1rem;
-    padding: 10px;
-    color: #666;
-    background-color: #fafafa;
-    border: none;
+table td{
+    padding: 5px;
+    border-color: #424242;
+    border-style: solid;
+    border-width: 1px;
 }
 
-form input, form textarea:focus{
-    outline: none;
-    background-color: #f0f0f0;
+table th{
+    padding: 5px;
+    border-color: #424242;
+    border-style: solid;
+    border-width: 1px;
 }
 
-form label{
-    padding: 10px;
-    text-align: right;
-    grid-column: 1;
+.text{
+    text-align: left;
 }
 
-.mySubmit{
-    width: 10rem;
-    grid-column: 2 / 3;
+table tr:nth-of-type(odd){
+    background-color: #F3F3F3;
+}
+
+video {
+    width: 480px;
+    height: 270px;
+    float: right;
+    margin-left: 2em;
 }
 
 @media only screen and (max-width: 1100px){
@@ -280,6 +290,13 @@ form label{
         width: 100%;
         height: auto;
         padding-left: 0px;
+    }
+
+    video{
+        float: none;
+        margin: 0;
+        width: 100%;
+        height: auto;
     }
 }
 
