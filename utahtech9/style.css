@@ -1,0 +1,431 @@
+body{
+    background-color: #FFFFFF;
+    color: #666666;
+    font-family: Verdana, Arial;
+    background-image: linear-gradient(#eeeeee, #ffffff);
+}
+
+header{
+    background-color: #003058;
+    color: #FFFFFF;
+    font-family: Georgia;
+    grid-column-start: 2;
+    grid-column-end: -2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+header a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+header h1{
+    background-image: url("images/utahtechlogo.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-left: 1em;
+    background-origin: content-box;
+    margin: 0;
+    line-height: 140%; padding: .5rem;
+}
+/*
+Change the background color to dark grey (#424242)
+Remove all padding and margin.
+Add a position:sticky to keep the menu visible when scrolling
+Add a top: 0 to keep the menu at the top of the page when scrolling
+*/
+nav{
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    background-color: #424242;
+    grid-column-start: 2;
+    grid-column-end: -2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+/*
+Code a new "nav ul" selector.
+or
+Add a margin of 0px
+Add a padding of 0px
+Add a display: flex 
+Add a flex-flow to make it a row and nowrap.
+Add a list-style-type: none
+*/
+nav ul{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+}
+
+nav ul li{
+    width: 100%;
+}
+/*
+Modify the "nav a" selector (all navigation links)
+Confirgure the text color of #FFFFFF, "
+Add a "padding: 1rem 0rem"
+Add a "display:block"
+Add a "text-align: center"
+*/
+nav a{
+    text-decoration: none;
+    color: #FFF;
+    padding: 1rem 0rem;
+    display: block;
+    text-align: center;
+    transition: background-color 0.5s ease-out;
+}
+
+nav a:hover{
+    background-color: #5e5e5e;
+}
+
+h2{
+    color: #424242;
+    font-family: Georgia;
+}
+
+dt{
+    color: #003058;
+    font-weight: bold;
+}
+
+.ut {
+    color: #BA1C21;
+    font-weight: bold;
+}
+
+footer{
+    font-size: .70rem;
+    font-style: italic;
+    text-align: center;
+    padding: 1rem;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 2;
+    grid-column-end: -2;
+}
+
+#wrapper{
+    display: grid;
+    grid-auto-rows: minmax();
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+}
+
+h3{
+    color: #003058;
+}
+
+main{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: -2;
+    background-color: #ffffff;
+}
+
+main img{
+    float: right;
+    padding-left: 2rem;
+}
+
+#homehero{
+    height: 300px;
+    background-size: cover;
+    background-image: url("images/homehero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-row: 3 / 4;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+#studenthero{
+    height: 300px;
+    background-size: cover;
+    background-image: url("images/studenthero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-row: 3 / 4;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+#facultyhero{
+    height: 300px;
+    background-size: cover;
+    background-image: url("images/facultyhero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-row: 3 / 4;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+#shophero{
+    height: 300px;
+    background-size: cover;
+    background-image: url("images/shophero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-row: 3 / 4;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+#bluebar{
+    background-color: #003058;
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+}
+
+#greybar{
+    background-color: #424242;
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+}
+
+form{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 200px 1fr;
+    gap: 0.75rem;
+    width: 100%;
+}
+
+form input, form textarea, form button{
+    font-size: 1rem;
+    padding: 10px;
+    color: #666;
+    background-color: #fafafa;
+    border: none;
+}
+
+form input:focus, form textarea:focus{
+    outline: none;
+    background-color: #f0f0f0;
+}
+
+form label{
+    padding: 10px;
+    text-align: right;
+    grid-column: 1;
+}
+
+.mySubmit{
+    width: 10rem;
+    grid-column: 2 / 3;
+}
+
+table{
+    text-align: center;
+    border-color: #424242;
+    border-style: solid;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td{
+    padding: 5px;
+    border-color: #424242;
+    border-style: solid;
+    border-width: 1px;
+}
+
+table th{
+    padding: 5px;
+    border-color: #424242;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.text{
+    text-align: left;
+}
+
+table tr:nth-of-type(odd){
+    background-color: #F3F3F3;
+}
+
+video {
+    width: 480px;
+    height: 270px;
+    float: right;
+    margin-left: 2em;
+}
+
+#shoppingcart{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 100%));
+}
+
+#shoppingcart img{
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 1100px){
+    #wrapper{
+        display: grid;
+        grid-auto-rows: minmax();
+        grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 150px)) minmax(0px, 1fr);
+    }
+
+}
+
+@media only screen and (max-width: 900px){
+    nav{
+        font-weight: bold;
+        position: static;
+        top: 0;
+        background-color: #424242;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    nav ul{
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-flow: column nowrap;
+        list-style-type: none;
+    }
+
+    #homehero{
+        height: auto;
+        background-size: cover;
+        background-image: url("images/homehero.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        grid-row: 2 / 3;
+        grid-column-start: 5;
+        grid-column-end: 8;
+    }
+
+    #studenthero{
+        height: auto;
+        background-size: cover;
+        background-image: url("images/studenthero.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        grid-row: 2 / 3;
+        grid-column-start: 5;
+        grid-column-end: 8;
+    }
+
+    #facultyhero{
+        height: auto;
+        background-size: cover;
+        background-image: url("images/facultyhero.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        grid-row: 2 / 3;
+        grid-column-start: 5;
+        grid-column-end: 8;
+    }
+
+    #alumnihero{
+        height: auto;
+        background-size: cover;
+        background-image: url("images/alumnihero.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        grid-row: 2 / 3;
+        grid-column-start: 5;
+        grid-column-end: 8;
+    }
+
+    #shophero{
+        height: auto;
+        background-size: cover;
+        background-image: url("images/shophero.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        grid-row: 2 / 3;
+        grid-column-start: 5;
+        grid-column-end: 8;
+    }
+
+    #shoppingcart{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 100%));
+    }
+
+    main img{
+        float: none;
+        width: 100%;
+        height: auto;
+        padding-left: 0px;
+    }
+
+    video{
+        float: none;
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    header h1{
+        background-image: none;
+        background-position: right;
+        background-repeat: no-repeat;
+        padding-left: 1em;
+        background-origin: content-box;
+        margin: 0;
+        line-height: 140%; padding: .5rem;
+        text-align: center;
+
+    }
+
+    nav{
+        font-weight: bold;
+        position: static;
+        top: 0;
+        background-color: #424242;
+        grid-column-start: 1;
+        grid-column-end: -1;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    #homehero{
+        display: none;
+    }
+    
+    #studenthero{
+        display: none;
+    }
+
+    #facultyhero{
+        display: none;
+    }
+
+    #alumnihero{
+        display: none;
+    }
+
+    #shophero{
+        display: none;
+    }
+
+    #shoppingcart{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 100%));
+    }
+}
